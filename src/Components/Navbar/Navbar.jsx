@@ -209,13 +209,6 @@ const Navbar = (props) => {
                                     </IconButton>}
 
                                 <div className='flex w-full justify-between items-center'>
-                                    {/* Brand_icon */}
-                                    <Link to={'/home'}>
-                                        <img className='sm:max-h-6 max-h-5 my-auto cursor-pointer'
-                                            src={logo_black}
-                                            alt="grocery" />
-                                    </Link>
-
                                     <div className='flex items-center space-x-8'>
                                         {/* Links */}
                                         {isSemiMediumScreen ?

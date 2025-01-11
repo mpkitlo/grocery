@@ -11,7 +11,7 @@ const Hero = () => {
     const navigate = useNavigate();
 
     return (
-        <section style={{ backgroundImage: `url(${Hero_bg})`, backgroundSize: 'cover' }} className='pt-16 bg-green-300/10'>
+        <section style={{ backgroundSize: 'cover' }} className='pt-16 bg-green-300/10'>
             <Container>
                 <div className='sm:grid sm:grid-cols-2 flex flex-col gap-x-5'>
                     {/* Text */}
