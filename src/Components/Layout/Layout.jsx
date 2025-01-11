@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Navbar, { userLoggedIn } from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 import { createContext, useState } from "react";
 import { handleSessionStorage } from "../../utils/utils";
 
@@ -18,7 +17,6 @@ const Layout = () => {
             <section className="min-h-screen">
                 <Outlet />
             </section>
-            <Footer />
         </groceryContext.Provider>
     );
 };
