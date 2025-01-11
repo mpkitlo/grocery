@@ -16,7 +16,7 @@ const EnjoyOurFreshGroceryItems = () => {
     // Get Grocery Items
     useEffect(() => {
         const getData = async function () {
-            const url = `https://api.npoint.io/bc3d1b1bc1a0fde36701/${selectedCategory}`
+            const url = `https://api.npoint.io/1e7fc258c37025995085/${selectedCategory}`
             try {
                 const res = await fetch(url)
                 const data = await res.json();
