@@ -228,6 +228,18 @@ const Navbar = (props) => {
                                                 isOpenDrawer={isOpenDrawer} />
                                         }
                                         <div className='sm:space-x-8 space-x-5'>
+                                            {/* Go to cart btn */}
+                                            <Tooltip title='Cart'>
+                                                <span>
+                                                    <IconButton
+                                                        onClick={() => navigate('/cart')}
+                                                        // disabled
+                                                        sx={{ textTransform: 'capitalize' }}
+                                                        color='warning'>
+                                                        <ShoppingCartRounded fontSize='inherit' />
+                                                    </IconButton>
+                                                </span>
+                                            </Tooltip>
                                             {// Log in Btn
                                                 !isUserLoggedIn ?
                                                     <Button onClick={() => navigate('/login')}
