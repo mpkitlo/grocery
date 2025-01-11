@@ -71,24 +71,25 @@ const Links = ({ drawer, setIsOpenDrawer, isOpenDrawer }) => {
 
     // This class will create Link Obj
     class LinkClass {
-        constructor(id, linkName) {
+        constructor(id, linkName, path) {
             this.id = id;
             this.linkName = linkName;
+            this.path = path;
         }
     }
 
-    const pageLink = [new LinkClass(0, 'Home'), new LinkClass(2, 'Categories')];
+    const pageLink = [new LinkClass(0, 'Strona Główna', 'home'), new LinkClass(2, 'Kategorie', 'categories')];
     const componentsLink = []
 
     return drawer ? (
         <List sx={{ mt: 1.5 }}>
             {pageLink.map(link => (
-                <Link to={`/${link.linkName.toLowerCase()}`} key={link.id}>
+                <Link to={`/${link.path.toLowerCase()}`} key={link.id}>
                     <ListItem sx={{ minWidth: '12rem' }} disablePadding>
                         <ListItemButton
                             onClick={() => setIsOpenDrawer(!isOpenDrawer)}
                             sx={{ ":hover": { bgcolor: '#E0F3D7' } }}>
-                            <ListItemText sx={{ marginLeft: '0.4rem' }} primary={link.linkName} />
+                            <ListItemText sx={{ marginLeft: '0.4rem' }} primary={link.path} />
                         </ListItemButton>
 
                     </ListItem>
@@ -111,7 +112,7 @@ const Links = ({ drawer, setIsOpenDrawer, isOpenDrawer }) => {
                             <ListItemButton
                                 onClick={() => setIsOpenDrawer(!isOpenDrawer)}
                                 sx={{ ":hover": { bgcolor: '#E0F3D7' } }}>
-                                <ListItemText sx={{ marginLeft: '0.4rem' }} primary={link.linkName} />
+                                <ListItemText sx={{ marginLeft: '0.4rem' }} primary={link.path} />
                             </ListItemButton>
 
                         </ListItem>
@@ -123,7 +124,7 @@ const Links = ({ drawer, setIsOpenDrawer, isOpenDrawer }) => {
         : (< ul className={`flex p-0 sm:space-x-8 space-x-5' text-black`} >
             {
                 pageLink.map(li => (
-                    <Link to={`/${li.linkName.toLowerCase()}`} key={li.id}>
+                    <Link to={`/${li.path.toLowerCase()}`} key={li.id}>
                         <li className='sm:text-base hover:text-gray-800 hover:scale-[0.99] text-sm'>
                             {li.linkName}
                         </li>
