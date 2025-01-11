@@ -78,7 +78,7 @@ const Links = ({ drawer, setIsOpenDrawer, isOpenDrawer }) => {
     }
 
     const pageLink = [new LinkClass(0, 'Home'), new LinkClass(2, 'Categories')];
-    const componentsLink = [new LinkClass('services', 'Services'), new LinkClass('footer', 'Contact')]
+    const componentsLink = []
 
     return drawer ? (
         <List sx={{ mt: 1.5 }}>
