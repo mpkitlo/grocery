@@ -57,7 +57,7 @@ const Login = () => {
                                 <div className='lg:space-y-10 md:space-y-8 space-y-10'>
                                     {/* Form Title */}
                                     <h3 className='text-center font-semibold text-gray-800 lg:text-3xl md:text-2xl text-3xl'>
-                                        Log In
+                                        Zaloguj
                                     </h3>
                                     <form onSubmit={handleSubmit(onSubmit)}
                                         className='text-center lg:space-y-7 md:space-y-6 space-y-7' action="login" method="post">
@@ -123,7 +123,7 @@ const Login = () => {
                                             type='submit'
                                             color='success'
                                             variant='contained'>
-                                            Log in
+                                            Zaloguj
                                         </Button>
                                     </form>
                                 </div>

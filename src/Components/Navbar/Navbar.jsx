@@ -183,7 +183,7 @@ const Navbar = (props) => {
         <>
             <SuccessAlert
                 state={[openAlert, setOpenAlert]}
-                massage={'Log out successfully'} />
+                massage={'Wylogowano'} />
 
             <nav className='fixed z-50'>
                 <CssBaseline />
@@ -241,7 +241,7 @@ const Navbar = (props) => {
                                                         sx={{ textTransform: 'capitalize' }}
                                                         color='success'
                                                         variant='contained'>
-                                                        Log in
+                                                        Zaloguj
                                                     </Button>
 
                                                     // Log out Btn
@@ -251,7 +251,7 @@ const Navbar = (props) => {
                                                         sx={{ textTransform: 'capitalize' }}
                                                         color='success'
                                                         variant='contained'>
-                                                        Log out
+                                                        Wyloguj
                                                     </Button>}
                                         </div>
                                     </div>

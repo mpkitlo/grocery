@@ -26,7 +26,7 @@ const PopularCategories = () => {
                 <header className='flex justify-between items-center'>
                     {/* Title */}
                     <h1 className='pb-0 md:text-2xl text-xl font-semibold capitalize'>
-                        Popular Categories
+                        Popularne kategorie
                     </h1>
                     {/* See all Categories Btn */}
                     <Button
@@ -36,7 +36,7 @@ const PopularCategories = () => {
                         onClick={()=> navigate('/categories')}
                         sx={{ textTransform: 'capitalize' }} endIcon={
                             <ArrowForward fontSize='large' />}>
-                        See All
+                        Zobacz wszystkie kategorie
                     </Button>
                 </header>
 
@@ -82,11 +82,11 @@ const Categories = () => {
             className="mySwiper">
             {
                 [
-                    { id: 0, name: 'Meat', img: meat, bgColor: '#FEF4EA' },
-                    { id: 1, name: 'Vegetables', img: vegetables, bgColor: '#F5F5F5' },
-                    { id: 2, name: 'Fruits', img: fruits, bgColor: '#EAF5E3' },
-                    { id: 3, name: 'Dairy', img: dairy, bgColor: '#eaf4f4' },
-                    { id: 4, name: 'Grains', img: grains, bgColor: '#FAF9D7', }
+                    { id: 0, name: 'Mięso', img: meat, bgColor: '#FEF4EA' },
+                    { id: 1, name: 'Warzywa', img: vegetables, bgColor: '#F5F5F5' },
+                    { id: 2, name: 'Owoce', img: fruits, bgColor: '#EAF5E3' },
+                    { id: 3, name: 'Produkty mleczne', img: dairy, bgColor: '#eaf4f4' },
+                    { id: 4, name: 'Produkty zbożowe', img: grains, bgColor: '#FAF9D7', }
                 ].map(category => (
                     // Category_card 
                     <SwiperSlide key={category.id}>

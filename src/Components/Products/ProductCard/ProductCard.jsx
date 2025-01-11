@@ -46,7 +46,7 @@ const ProductCard = ({ product }) => {
         <div>
             <SuccessAlert
                 state={[openAlert, setOpenAlert]}
-                massage={'Item added successfully'} />
+                massage={'Dodano do koszyka'} />
 
             <Fade in={true}>
                 <Card sx={{ maxWidth: isSmallScreen ? 275 : 295, mx: 'auto', boxShadow: '0 2px 4px -1px rgb(0 0 0 / 0.1)', backgroundColor: 'white' }}>
@@ -91,7 +91,7 @@ const ProductCard = ({ product }) => {
 
                                         {/*Number of Reviews*/}
                                         <span className='text-sm md:text-xs lg:text-sm text-gray-500'>
-                                            ( {reviewCount} Reviews )
+                                            ( {reviewCount} Opinie )
                                         </span>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ const ProductCard = ({ product }) => {
                                 size={isMediumScreen ? 'small' : 'medium'}
                                 variant='outlined'
                                 color='success'>
-                                Add to cart
+                                Dodaj do koszyka
                             </Button>
                         </CardActions>
                     </div>

@@ -34,8 +34,7 @@ const EnjoyOurFreshGroceryItems = () => {
             <div className='space-y-7 xl:space-y-8'>
                 {/* Title */}
                 <h1 className='text-center pb-0 md:text-2xl text-xl font-semibold capitalize tracking-wide'>
-                    Enjoy Our Healthy And Fresh <br />
-                    Grocery Items
+                    Kupuj nasze świeże produkty spożywcze
                 </h1>
                 {/* Items Toggler  */}
                 <ItemsToggler
@@ -61,7 +60,7 @@ const EnjoyOurFreshGroceryItems = () => {
                     size={isExtraSmallScreen ? 'small' : 'medium'}
                     variant='outlined'
                     sx={{ textTransform: 'capitalize', display: 'block', mx: 'auto' }}>
-                    View All Products
+                    Zobacz wszystkie produkty
                 </Button>
             </div>
         </Container>
@@ -77,9 +76,9 @@ const ItemsToggler = ({ alignment, setAlignment }) => {
     return (
         <div className='space-x-3 md:space-x-5 text-center'>
             {[
-                { id: 0, name: 'Meat' },
-                { id: 1, name: 'Vegetables' },
-                { id: 2, name: 'Fruits' },
+                { id: 0, name: 'Mięso' },
+                { id: 1, name: 'Warzywa' },
+                { id: 2, name: 'Owoce' },
             ].map(category => (
                 <Button
                     sx={{ textTransform: 'capitalize', transition: 'all 150ms ease-in-out' }}
