@@ -1,5 +1,4 @@
 import { Fade } from '@mui/material';
-import CustomersReview from './CustomersReview/CustomersReview';
 import Hero from './Hero/Hero';
 import PopularCategories from './PopularCategories/PopularCategories';
 import EnjoyOurFreshGroceryItems from './EnjoyOurFreshGroceryItems/EnjoyOurFreshGroceryItems';
@@ -14,7 +13,6 @@ const Home = () => {
         <Hero />
         <PopularCategories />
         <EnjoyOurFreshGroceryItems />
-        <CustomersReview />
       </main>
     </Fade>
   )
