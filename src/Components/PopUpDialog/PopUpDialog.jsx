@@ -48,7 +48,7 @@ const PopUpDialog = ({ open, message, handleRemove, handleCancel, handleOk, plac
                                     color='inherit'
                                     size={isExtraSmallScreen ? 'small' : 'medium'}
                                     onClick={handleCancel}>
-                                    Cancel
+                                    Nie
                                 </Button>
                                 {/* Remove Btn */}
                                 <Button
@@ -57,7 +57,7 @@ const PopUpDialog = ({ open, message, handleRemove, handleCancel, handleOk, plac
                                     onClick={handleRemove}
                                     size={isExtraSmallScreen ? 'small' : 'medium'}
                                     variant='contained'>
-                                    Remove
+                                    Tak
                                 </Button>
                             </>}
                     </div>

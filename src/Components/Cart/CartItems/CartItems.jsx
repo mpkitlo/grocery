@@ -11,7 +11,7 @@ const CartItems = () => {
         <div className='lg:space-y-10 space-y-5'>
             {/* Title */}
             <h2 className='lg:text-2xl sm:text-xl text-lg sm:font-semibold font-bold '>
-                Selected Items
+                Wybrane produkty
             </h2>
 
             {/* Items Card list */}

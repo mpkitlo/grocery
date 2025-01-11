@@ -29,7 +29,7 @@ const CartItemCard = ({ item }) => {
                 open={openDialog }
                 handleRemove={handleRemoveItem}
                 handleCancel={()=> setOpenDialog(!openDialog)}
-                message={'Want to remove this item'} />
+                message={'Czy na pewno chcesz usunąć produkt?'} />
 
             <Fade in={true}>
                 <div className='grid max-w-[40rem] py-2.5 px-3 xl:grid-cols-5 sm:grid-cols-6 grid-cols-7 lg:gap-x-2.5 gap-x-2 rounded-md w-full bg-white hover:shadow-sm'>
@@ -47,11 +47,6 @@ const CartItemCard = ({ item }) => {
                             <h4 className='font-semibold lg:max-h-none max-h-10 overflow-hidden lg:text-gray-700 sm:text-sm text-xs'>
                                 {name}
                             </h4>
-
-                            {/* Description */}
-                            <h6 className='text-justify text-xs text-gray-700'>
-                                Best Quality
-                            </h6>
                         </div>
                     </div>
 
@@ -59,7 +54,7 @@ const CartItemCard = ({ item }) => {
                         <div className='lg:space-y-1 md:space-y-0 sm:space-y-0.5'>
                             {/*Total Price */}
                             <h3 className='font-semibold whitespace-nowrap sm:text-base text-sm text-green-600'>
-                                $ {total}
+                                {total} zł
                             </h3>
 
                             {/* Remove-Item btn */}
