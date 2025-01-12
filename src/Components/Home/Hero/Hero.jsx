@@ -1,8 +1,5 @@
 import React from 'react';
-import Hero_bg from '../../../assets/backgrounds/1_bg.png'
 import { Button, Container, useMediaQuery } from '@mui/material';
-import hero_customer from '../../../assets/hero_customer.png';
-import ful_kopi from '../../../assets/icons/ful_kopi_icon.png';
 import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
