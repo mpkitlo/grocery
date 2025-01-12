@@ -9,14 +9,14 @@ const EmptyCart = () => {
         <Fade in={true}>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                 <div className='text-center md:space-y-4 space-y-3.5 text-gray-500'>
-                    <h6 className='text-sm'>There are no items in this cart</h6>
+                    <h6 className='text-sm'>Nie ma produktów na liście</h6>
                     <Button
                         onClick={() => navigate('/products')}
                         size='large'
                         color='success'
                         sx={{ textTransform: 'capitalize' }}
                         variant='outlined'>
-                        Continue Shopping
+                        Kontynuuj zakupy
                     </Button>
                 </div>
             </Container>
