@@ -1,0 +1,267 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[parfill]{parskip}
+\usepackage[top=2cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+
+\begin{document}
+
+\begin{Large}
+    Idee i informatyka, raport
+	\hfill
+	Zespół 3
+\end{Large}
+\rule{\columnwidth}{1pt}
+
+W odpowiedzi na rosnące zapotrzebowanie na wygodne zakupy spożywcze online, nasz zespół zamierza
+stworzyć aplikację \textbf{Online Grocery Shop}, której celem jest uproszczenie procesu robienia
+zakupów spożywczych zarówno w sklepach stacjonarnych, jak i online. Aplikacja oferuje funkcje,
+takie jak możliwość skanowania etykiet produktów i znajdowania podobnych,
+tworzenie list zakupowych na podstawie wcześniejszych zakupów, rekomendacje oparte na
+sztucznej inteligencji oraz system dostawy
+bezpośrednio do drzwi użytkownika. Dzięki tym rozwiązaniom aplikacja umożliwia zaoszczędzenie
+czasu i dostosowuje proces zakupów do indywidualnych potrzeb użytkowników.
+
+% TODO change
+\subsection*{Dla kogo jest nasz produkt?}
+\begin{itemize}
+    \item \textbf{Zapracowani profesjonaliści}: Osoby, które prowadzą intensywne życie zawodowe i często nie mają czasu na tradycyjne zakupy. Preferują zakupy online, ale szukają rozwiązań, które pozwolą im zaoszczędzić czas i dokonać świadomych wyborów produktowych.
+    \item \textbf{Rodziny}: Osoby, które regularnie robią zakupy spożywcze i potrzebują narzędzi, które ułatwią im organizację zakupów i zaoszczędzą czas, zwłaszcza w codziennej logistyce domowej.
+    \item \textbf{Seniorzy}: Osoby starsze, które mogą mieć trudności z poruszaniem się po dużych sklepach stacjonarnych, ale chętnie korzystają z zakupów online, zwłaszcza jeśli oferują one proste i łatwe w obsłudze rozwiązania.
+    \item \textbf{Osoby dbające o zdrowie}: Użytkownicy, którzy preferują zdrową żywność i chcą mieć dostęp do pełnych informacji na temat jakości produktów, wartości odżywczych oraz opinii innych użytkowników.
+\end{itemize}
+
+\subsection*{Co zapewniamy?}
+\begin{itemize}
+    \item \textbf{Oszczędność czasu}: Dzięki funkcjom, takim jak automatyczne generowanie list
+        zakupowych na podstawie wcześniejszych zakupów oraz rekomendacje najlepszych produktów
+        wśród wybranej kategorii oparte na sztucznej inteligencji, użytkownicy mogą szybko i
+        efektywnie realizować zakupy.
+    \item \textbf{Wygodne zakupy}: Funkcja skanowania etykiet produktów pozwala na szybkie
+        porównanie jakości produktów bez potrzeby przeszukiwania internetu.
+    \item \textbf{Świadome zakupy}: Aplikacja zapewnia dostęp do opinii innych użytkowników oraz informacji o jakości produktów, co pozwala na podejmowanie bardziej świadomych decyzji zakupowych.
+\end{itemize}
+
+\subsection*{Czym nasze rozwiązanie wyróżnia się?}
+
+Nasza aplikacja wyróżnia się kilkoma unikalnymi funkcjami, które sprawiają, że jest bardziej przyjazna dla użytkowników niż inne rozwiązania na rynku:
+\begin{itemize}
+    \item \textbf{Skanowanie etykiet}: Użytkownicy mogą zeskanować etykietę produktu, aby
+        natychmiast uzyskać dostęp do recenzji innych użytkowników oraz informacji o jakości
+        produktu. Funkcja ta daje użytkownikom pewność co do jakości produktów przed zakupem.
+    \item \textbf{Listy zakupowe}: Sztuczna inteligencja pomaga tworzyć listy zakupowe na podstawie wcześniejszych zakupów oraz personalizowanych sugestii, co umożliwia łatwiejsze zakupy, a także przewiduje potrzeby użytkowników.
+    \item \textbf{Tworzenie listy z paragonu}: Funkcja umożliwiająca generowanie list zakupowych na podstawie zeskanowanego paragonu, co pozwala zaoszczędzić czas przy ponownych zakupach.
+\end{itemize}
+
+Te funkcje wprowadzają zupełnie nowe podejście do zakupów spożywczych, które łączy wygodę, szybkość i świadomość wyborów produktowych.
+
+\subsubsection*{Istniejąca konkurencja:}
+\begin{itemize}
+    \item \textbf{Allegro, Tesco, Auchan, Carrefour}: Popularne platformy e-commerce, któr
+        oferują zakupy spożywcze online. Mają szeroki asortyment produktów, ale nie oferują
+        specjalistycznych funkcji takich jak rekomendacje oparte na AI.
+    \item \textbf{Instacart}: Usługa dostarczania produktów spożywczych z lokalnych sklepów
+        działa na rynku amerykańskim. Choć oferuje szybkie dostawy, nie zawiera funkcji, które
+        pomagają w tworzeniu list zakupowych na podstawie historii zakupów.
+\end{itemize}
+
+Słabą stroną rozwiązań konkurentów jest niski poziom personalizacji zakupów, co zamierzamy naprawić
+wykorzystując narzędzia sztucznej inteligencji.
+
+\subsection*{Opis sposobu realizacji rozwiązania}
+
+Aby skutecznie zrealizować ten projekt, nasz zespół zaplanował następujący sposób realizacji
+rozwiązania:
+
+
+\subsubsection*{1. Implementacja głównych funkcji}
+
+W tej fazie skupiamy się na technicznym opracowaniu aplikacji i jej kluczowych elementów:
+\begin{itemize}
+    \item \textbf{Frontend (Interfejs użytkownika)}: Aplikacja mobilna zostanie zaprojektowana w
+        \textbf{React Native}, co pozwala na szybkie tworzenie aplikacji na systemy \textbf{iOS} i
+        \textbf{Android} z jednym wspólnym kodem źródłowym.
+        Aplikacja będzie miała intuicyjny interfejs z funkcjami przeglądania produktów,
+        skanowania etykiet, tworzenia list zakupowych oraz zarządzania dostawą.
+    \item \textbf{Backend (Serwer i bazy danych)}:
+    \begin{itemize}
+        \item \textbf{Node.js} z frameworkiem \textbf{Express} zostaną użyte do budowy backendu,
+            który będzie obsługiwał zapytania użytkowników.
+        \item \textbf{MongoDB} posłuży jako baza danych do przechowywania informacji o produktach,
+            użytkownikach, historii zakupów, recenzjach oraz transakcjach. Wybór bazy NoSQL pozwala
+            na szybkie przetwarzanie danych i łatwą skalowalność systemu.
+    \end{itemize}
+    \item \textbf{Algorytmy AI}:
+    \begin{itemize}
+        \item Wykorzystamy narzędzia sztucznej inteligencji, takie jak \textbf{TensorFlow} i
+            \textbf{scikit-learn}, do personalizacji list zakupowych oraz rekomendacji produktów.
+            Na podstawie historii zakupów i preferencji użytkownika, AI będzie proponować
+            najbardziej odpowiednie produkty, co zautomatyzuje proces zakupowy i przyspieszy
+            podejmowanie decyzji.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{2. Integracja z zewnętrznymi systemami}
+
+Aplikacja wymaga integracji z szeregiem zewnętrznych systemów, aby zapewnić pełną funkcjonalność:
+\begin{itemize}
+    \item \textbf{Systemy do skanowania etykiet}: Zintegrujemy aplikację z technologiami,
+        umożliwiającym użytkownikom skanowanie kodów kreskowych w sklepach stacjonarnych,
+        aby uzyskać dostęp do recenzji, jakości produktów i danych odżywczych w czasie rzeczywistym.
+    \item \textbf{Integracja z platformami e-commerce}: Aplikacja będzie łączyć się z systemami
+        zewnętrznymi, np. \textbf{Allegro}, \textbf{Carrefour}, czy \textbf{Tesco}, aby
+        automatycznie pobierać dane o produktach, cenach i dostępności w sklepach internetowych.
+    \item \textbf{Integracja z systemami dostawców}: Aby umożliwić realizację zamówień, aplikacja
+        będzie współpracować z zewnętrznymi usługami kurierskimi, takimi jak \textbf{GLS} czy
+        \textbf{Poczta Polska}, które umożliwią dostarczenie produktów do drzwi użytkownika.
+\end{itemize}
+
+\subsubsection*{3. Testowanie i weryfikacja}
+
+Wszystkie komponenty aplikacji będą poddane szczegółowym testom, aby upewnić się, że działają
+zgodnie z wymaganiami:
+\begin{itemize}
+    \item \textbf{Testy jednostkowe i integracyjne}: Wykorzystamy narzędzia takie jak \textbf{Jest}
+        i \textbf{Mocha} do testowania funkcji backendowych i frontendowych aplikacji.
+    \item \textbf{Testy użyteczności}: Przeprowadzimy testy z użytkownikami, aby upewnić się,
+        że interfejs jest intuicyjny, a wszystkie funkcje działają poprawnie.
+    \item \textbf{Testy obciążeniowe}: Aby zapewnić skalowalność aplikacji, przeprowadzimy
+        testy wydajnościowe, symulując dużą liczbę użytkowników.
+\end{itemize}
+
+\subsubsection*{4. Wdrożenie i uruchomienie aplikacji}
+
+Po zakończeniu testów aplikacja zostanie wdrożona na platformach \textbf{Google Play} i
+\textbf{Apple App Store}. Proces wdrożenia obejmuje:
+\begin{itemize}
+    \item \textbf{Stworzenie wersji beta}: Udostępnienie aplikacji w wersji beta wybranym
+        użytkownikom, aby zebrać opinie i dokonać ostatnich poprawek.
+    \item \textbf{Wdrożenie na żywo}: Publikacja aplikacji na szeroką skalę, z monitoringiem
+        wydajności oraz szybkim reagowaniem na zgłaszane problemy.
+\end{itemize}
+
+\subsubsection*{5. Utrzymanie i rozwój aplikacji}
+
+Po uruchomieniu aplikacji, będziemy kontynuować jej rozwój oraz zapewniać jej wsparcie:
+\begin{itemize}
+    \item \textbf{Aktualizacje}: Regularne aktualizacje aplikacji, które będą obejmować poprawki
+        błędów, nowe funkcje oraz aktualizacje zgodności z systemami zewnętrznymi.
+    \item \textbf{Wsparcie techniczne}: Zespół wsparcia technicznego będzie dostępny, aby
+        rozwiązywać problemy użytkowników oraz zapewniać odpowiedzi na ich pytania.
+    \item \textbf{Zbieranie opinii}: Aktywnie zbierać będziemy opinie użytkowników, co pozwoli na
+        dalsze dostosowywanie aplikacji do ich potrzeb i oczekiwań.
+\end{itemize}
+
+% TODO
+\subsection*{Szacowanie kosztów i finansowanie (biznesplan)}
+
+Aby skutecznie wdrożyć naszą aplikację "Online Grocery Shop" oraz zapewnić jej rozwój i funkcjonowanie, niezbędne będzie odpowiednie zaplanowanie kosztów. W niniejszym rozdziale przedstawiamy szacunkowe koszty realizacji projektu oraz plan finansowania.
+
+\subsubsection*{Koszty początkowe}
+
+\begin{itemize} 
+
+\item \textbf{Koszty infrastruktury}: 
+\begin{itemize}
+    \item Serwery, bazy danych oraz infrastruktura chmurowa (np. AWS, Google Cloud): około 20 000 PLN.
+    \item Integracja z zewnętrznymi platformami (np. Allegro, Carrefour): około 20 000 PLN.
+\end{itemize}
+
+\item \textbf{Koszty zatrudnienia}: 
+\begin{itemize}
+    \item Zatrudnienie zespołu (programiści, helpdesk, administratorzy): około 40 000 PLN.
+\end{itemize}
+
+\end{itemize}
+
+\subsubsection*{Koszty bieżące (roczne)}
+
+\begin{itemize} 
+
+\item \textbf{Koszt rozwoju oprogramowania}: 
+\begin{itemize} 
+	\item Utrzymanie zespołu programistów (frontend, backend, AI): około 300 000 PLN rocznie.
+	\item Zakup narzędzi i licencji (np. do TensorFlow, MongoDB): około 30 000 PLN rocznie.
+	\item Projektowanie interfejsu użytkownika i UX: około 40 000 PLN rocznie.
+\end{itemize}
+
+\item \textbf{Koszt utrzymania aplikacji}: 
+\begin{itemize} 
+	\item Serwery, bazy danych oraz infrastruktura chmurowa (monitorowanie, przestrzeń dyskowa, kopie zapasowe): 30 000 PLN rocznie. 
+	\item Aktualizacje aplikacji oraz monitorowanie jej wydajności: około 25 000 PLN rocznie. 
+	\item Bezpieczeństwo systemu (SSL, DDoS, ochrona danych): około 15 000 PLN rocznie. 
+\end{itemize}
+
+\item \textbf{Wsparcie techniczne}: 
+\begin{itemize}
+    \item Utrzymanie zespołu wsparcia technicznego (helpdesk, administratorzy, obsługa użytkowników 24/7): około 70 000 PLN rocznie.
+\end{itemize}
+
+\item \textbf{Koszt marketingowy}: 
+\begin{itemize}
+    \item Reklamy na Facebooku, Instagramie i Google Ads: około 70 000 PLN rocznie.
+    \item Współpraca z influencerami i blogerami: około 30 000 PLN rocznie.
+    \item Kampanie mailingowe i promocje: około 15 000 PLN rocznie.
+\end{itemize}
+
+\item \textbf{Koszty operacyjne i administracyjne}: 
+\begin{itemize}
+    \item Bieżące zarządzanie projektem (np. wynagrodzenia menedżerów): około 100 000 PLN rocznie.
+\end{itemize}
+
+\end{itemize}
+
+\subsubsection*{Szacowane przychody}
+
+\begin{itemize} 
+
+\item \textbf{Model subskrypcyjny}: 
+\begin{itemize} 
+	\item Opłata miesięczna dla użytkowników premium (np. 20 PLN miesięcznie): szacowane przychody w pierwszym roku (5 000 subskrybentów): 1 200 000 PLN rocznie. 
+\end{itemize}
+
+\item \textbf{Reklama i partnerstwa}: 
+\begin{itemize}
+    \item Dochody z reklamy i współpracy z partnerami e-commerce (np. Allegro, Tesco, Carrefour): około 400 000 PLN rocznie.
+\end{itemize}
+
+\end{itemize}
+
+\subsubsection*{Plan finansowania}
+
+Projekt "Online Grocery Shop" będzie finansowany za pomocą kilku źródeł:
+
+\begin{itemize} 
+	\item \textbf{Inwestorzy zewnętrzni}: Poszukiwane będą inwestycje w wysokości około 700 000 PLN od inwestorów prywatnych lub funduszy venture capital. 
+	\item \textbf{Dotacje i granty}: Aplikacja będzie ubiegać się o dotacje i granty na rozwój technologii oraz innowacyjnych rozwiązań związanych ze sztuczną inteligencją. 
+	\item \textbf{Kredyty technologiczne}: Zespół rozważy zaciągnięcie kredytu technologicznego w wysokości około 200 000 PLN, który będzie przeznaczony na rozwój oprogramowania oraz zakup specjalistycznych narzędzi i licencji potrzebnych do realizacji projektu.
+\end{itemize}
+
+\subsubsection*{Podsumowanie}
+
+Całkowite koszty początkowe szacowane są na około 80 000 PLN, a roczne koszty operacyjne na około 725 000 PLN. Projekt generować będzie przychody na poziomie około 1 800 000 PLN rocznie. Oczekujemy, że po pierwszym roku działalności firma osiągnie rentowność i zacznie generować zysk netto w wysokości około 1 075 000 PLN, który będzie reinwestowany w dalszy rozwój aplikacji oraz ekspansję na nowe rynki.
+
+% TODO
+\subsection*{Badanie społeczne}
+
+\subsection*{Jak utrzymujemy kontakt z klientami?}
+
+Planujemy dotrzeć do potencjalnych użytkowników naszej aplikacji poprzez:
+\begin{itemize}
+    \item Reklamy na Facebooku, Instagramie i Google Ads
+    \item Współprace z influencerami oraz blogerami
+    \item Kampanie mailingowe oraz promocje w aplikacjach mobilnych
+    \item Partnerstwa z sieciami sklepów
+\end{itemize}
+
+\subsection*{Podsumowanie}
+
+Nasza aplikacja ma na celu zmianę sposobu robienia zakupów spożywczych.
+W ciągu kilku lat planujemy zaimplementować wszystkie opisane funkcje.
+Naszym celem jest także rozbudowa aplikacji oraz wprowadzenie nowych technologii,
+które jeszcze bardziej ulepszą doświadczenie zakupowe użytkowników.
+
+\end{document}
+
+
